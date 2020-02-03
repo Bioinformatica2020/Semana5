@@ -1,5 +1,31 @@
 # Semana5
 
+
+```
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots(figsize=(4, 3)) #  ANCHO X ALTO
+
+ax.bar(frecuencia.Pathway.tolist(), # EJE X
+       frecuencia.Gene.tolist(), # EKE Y
+        color = 'red') # color de las barras
+
+ax.xaxis.set_tick_params(labelsize=10, rotation = 90,) # tamaño de letra del eje x
+ax.yaxis.set_tick_params(labelsize=11) # tamaño de letra del eje y
+
+ax.set_xlabel('Vías', fontsize = 13, weight="bold")# título y tamaño para el eje x
+ax.set_ylabel('Número de genes', fontsize = 13, weight="bold")# título y tamaño para el eje y
+
+ax.spines['right'].set_visible(False) # oculta la linea derecha
+ax.spines['top'].set_visible(False) # oculta la linea superior
+
+for i, j in zip(frecuencia.Pathway.tolist(), frecuencia.Gene.tolist()):
+    plt.text(i, j, j, size=9, color= 'black', ha = 'center', va = 'bottom')
+
+#fig.savefig('../salidas/vias.png',dpi = 600, bbox_inches='tight')
+plt.show()
+```
+
+
 # Colors
 https://xkcd.com/color/rgb/  
 
