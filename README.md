@@ -18,9 +18,6 @@ ax.set_ylabel('Número de genes', fontsize = 13, weight="bold")# título y tama�
 ax.spines['right'].set_visible(False) # oculta la linea derecha
 ax.spines['top'].set_visible(False) # oculta la linea superior
 
-for i, j in zip(frecuencia.Pathway.tolist(), frecuencia.Gene.tolist()):
-    plt.text(i, j, j, size=9, color= 'black', ha = 'center', va = 'bottom')
-
 #fig.savefig('../salidas/vias.png',dpi = 600, bbox_inches='tight')
 plt.show()
 ```
