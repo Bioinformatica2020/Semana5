@@ -1,5 +1,8 @@
 # Semana5
 
+# Colors
+https://xkcd.com/color/rgb/
+https://matplotlib.org/2.0.0/examples/color/named_colors.html
 
 # Python colors
 
